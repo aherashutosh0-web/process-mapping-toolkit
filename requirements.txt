@@ -1,0 +1,3 @@
+# Only needed for the tool's test suite.
+# tools/validate_rtm.py itself runs on the Python standard library (3.9+).
+pytest>=7.0

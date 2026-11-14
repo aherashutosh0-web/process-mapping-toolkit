@@ -1,0 +1,19 @@
+# Sample Requirements Traceability Matrix — Retail Order Fulfilment Programme
+# Columns: ReqID, Requirement, Source, Owner, Priority, TestCaseIDs, Status
+# TestCaseIDs are separated by ';'. Deliberately includes a few problems so
+# validate_rtm.py has something to find — see tools/README.md.
+ReqID,Requirement,Source,Owner,Priority,TestCaseIDs,Status
+BA-001,The system shall accept an order only when all lines have available stock.,Process workshop 2026-03-12,A. Patel,must,TC-001;TC-002,Approved
+BA-002,The system shall reserve stock for 30 minutes when a customer reaches checkout.,Process workshop 2026-03-12,A. Patel,must,TC-003,Approved
+BA-003,Backorders shall be flagged on the order confirmation email.,Interview - Fulfilment lead,A. Patel,should,TC-004;TC-005,Approved
+BA-004,Dispatch notes shall print automatically when a picker completes a wave.,Process workshop 2026-03-12,R. Khan,must,TC-006;TC-007,Approved
+BA-005,Partial shipments shall be allowed for orders over 10 line items.,Interview - Customer service,R. Khan,could,,In review
+BA-006,The warehouse dashboard shall refresh at least every 5 minutes.,Workshop - Ops managers,R. Khan,should,TC-008,Approved
+BA-007,Refunds for failed deliveries shall be raised within 24 hours.,Regulatory - consumer law,A. Patel,must,TC-009;TC-010,Approved
+BA-008,Orders flagged as fraud-risk shall be routed to a manual review queue.,Policy doc SD-14,R. Khan,must,TC-011;TC-012,Approved
+BA-009,Customers shall be able to cancel an order before it is dispatched.,Interview - Customer service,A. Patel,must,TC-013,Approved
+BA-010,The fulfilment SLA report shall be generated every Monday at 07:00.,Workshop - Ops managers,R. Khan,should,TC-014,Approved
+BA-011,,,R. Khan,should,,Draft
+BA-012,Carrier tracking numbers shall be pushed to the customer account page.,Interview - Fulfilment lead,A. Patel,should,TC-015;TC-016,In review
+BA-013,Damaged-goods claims shall be logged against the original dispatch record.,Interview - Customer service,R. Khan,must,TC-17A,In review
+BA-014,Order data shall be retained for 7 years after fulfilment.,Policy doc SD-14,A. Patel,must,TC-017;TC-018,Approved
